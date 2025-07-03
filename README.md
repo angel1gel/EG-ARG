@@ -1,34 +1,22 @@
-## EquiPNAS: improved protein-nucleic acid binding site prediction using protein-language-model-informed equivariant deep graph neural networks
-
-by Rahmatullah Roche, Bernard Moussad, Md Hossain Shuvo, Sumit Tarafder, and Debswapna Bhattacharya
-
-published in [Nucleic Acids Research](https://doi.org/10.1093/nar/gkae039)
-
-Codebase for our improved protein-nucleic binding site prediction appraoch, EquiPNAS.
-
-![Workflow](./workflow.png)
+![Workflow](./workflow.jpg)
 
 ## Installation
 
-1.) We recommend conda virtual environment to install dependencies for EquiPNAS. The following command will create a virtual environment named 'EquiPNAS'
+1.) We recommend conda virtual environment to install dependencies for EquiPNAS. The following command will create a virtual environment named 'EG-ARG'
 
-`conda env create -f EquiPNAS_env.yml`
+`conda env create -f environment.yml`
 
 2.) Then activate the virtual environment
 
-`conda activate EquiPNAS`
-
-3.) Download the trained models from [here](https://zenodo.org/record/7888985#.ZFHIVHbMK3A)
-
-- For protein-DNA binding site prediction, use models/EquiPNAS-DNA model 
-- For protein-RNA binding site prediction, use models/EquiPNAS-RNA model 
+`conda activate EG-ARG`
 
 
-That's it! EquiPNAS is ready to be used.
 
 ## Usage
 
-To see usage instructions, run `python EquiPNAS.py -h`
+To see usage instructions, run 
+`cd /EG-ARG/train_scripts`
+`python train_model_gat_cnn.py`
 
 ```
 usage: EquiPNAS.py [-h] [--model_state_dict MODEL_STATE_DICT] [--indir INDIR] [--outdir OUTDIR] [--num_workers NUM_WORKERS]
